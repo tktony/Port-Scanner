@@ -35,7 +35,7 @@ Scans ports using multithreading and a queue-based system to identify open ports
    cd Port-Scanner
    ```
 
-2. **Edit the target IP inside `scanner.py`**:
+2. **Edit the target IP inside `portscanner.py`**:
    
    ```bash
    target = "192.168.0.1"  # Example: your router or localhost
@@ -44,7 +44,7 @@ Scans ports using multithreading and a queue-based system to identify open ports
 3. **Run the script**:
    
    ```bash
-   python scanner.py
+   python portscanner.py
    ```
 
 ## 🎓 Notes
