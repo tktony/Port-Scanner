@@ -7,17 +7,15 @@ Scans ports using multithreading and a queue-based system to identify open ports
 
 
 
-## 📦 Features
+## Features
 
 - ✅ Scans TCP ports from 1 to 1023 (well-known ports)
 - 🚀 Multithreaded (~500–2000 ports/sec depending on system)
 - 📥 Uses `Queue` to prevent duplicate scans
 - 🧵 Adjustable number of threads (default: 500)
-- 🔧 Clean and readable code with comments
 
 
-
-## 🧠 How It Works
+## How It Works
 
 - Each port is added to a shared `Queue`
 - Multiple threads pull ports from the queue and attempt TCP connections
@@ -26,7 +24,7 @@ Scans ports using multithreading and a queue-based system to identify open ports
 
 
 
-## 🛠️ Usage
+## Usage
 
 1. **Clone the repo**:
    
@@ -47,12 +45,12 @@ Scans ports using multithreading and a queue-based system to identify open ports
    python portscanner.py
    ```
 
-## 🎓 Notes
+## Notes
 - Adjust `thread_count` or `port_list` as needed.
 - You can scan local devices like your router (e.g., 192.168.0.1) or localhost (127.0.0.1).
 - Don’t scan public IPs without permission.
 
-## 📌 Understanding Ports (Analogy)
+## Understanding Ports (Analogy)
 Think of ports like doors or windows on a house. An open port is like an unlocked window where a specific service (e.g., HTTP on port 80) is accessible.
 Closed ports are like shut windows - less risky, but still visible. Port scanning is like walking around the house and checking which windows respond when knocked on.
 
